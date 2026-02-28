@@ -133,8 +133,13 @@ document.addEventListener('keypress', function(e) {
 
 // WhatsApp Share
 function shareOnWhatsApp() {
-  const url = window.location.href;
-  const msg = `مخطط المذاكرة اليومي 🎯\nركز على اللي مهم النهاردة!\n${url}\n\n#مذاكرة #طلاب_مصر`;
+  const url = "https://today-study-focus.netlify.app/";
+  const msg = `مخطط المذاكرة اليومي 🎯
+ركز على اللي مهم النهاردة!
+${url}
+
+#مذاكرة #طلاب_مصر`;
+  
   const wa = `https://wa.me/?text=${encodeURIComponent(msg)}`;
   showToast("تم فتح واتساب! 📱");
   window.open(wa, '_blank');
@@ -166,4 +171,5 @@ if (!document.querySelector('#pulse-keyframes')) {
   style.id = 'pulse-keyframes';
   style.textContent = `@keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.03)} }`;
   document.head.appendChild(style);
+
 }
