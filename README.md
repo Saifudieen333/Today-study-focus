@@ -8,7 +8,7 @@ This project was built with the goal of reducing study stress and helping studen
 
 🚀 Live Demo
 
-👉 [](https://today-study-focus.netlify.app/)
+👉 [The Study Planner](https://today-study-focus.netlify.app/)
 
 💡 Why This Project Matters
 
