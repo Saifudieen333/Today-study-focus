@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Today's Study Focus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top accent header -->
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <!-- Hero -->
+    <div class="hero">
+      <h1>🎯 Today’s Study Focus</h1>
+      <p>
+        Built to reduce stress and help students focus
+        on what actually matters today.
+      </p>
+    </div>
+
+    <!-- Form -->
+    <form id="study-form">
+      <div class="subject">
+        <input type="text" placeholder="Subject name" class="name" required>
+
+        <select class="difficulty">
+          <option value="1">Easy</option>
+          <option value="2">Medium</option>
+          <option value="3">Hard</option>
+        </select>
+
+        <select class="urgency">
+          <option value="1">Not urgent</option>
+          <option value="2">Exam soon</option>
+        </select>
+
+        <select class="confidence">
+          <option value="1">Low confidence</option>
+          <option value="2">Medium confidence</option>
+          <option value="3">High confidence</option>
+        </select>
+      </div>
+
+      <button type="button" id="add-subject">+ Add another subject</button>
+
+      <div class="time-box">
+        <label>Total study time today (hours)</label>
+        <input type="number" id="time" min="1" max="10" required>
+      </div>
+
+      <button type="submit" class="main-btn">
+        Show Me What To Focus On
+      </button>
+    </form>
+
+    <!-- Result -->
+    <div id="result" class="result"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      Designed to help students feel calmer and more focused during busy study days.
+    </p>
+    <p class="credit">
+      Built by <strong>Saif</strong> using simple web technologies 💙
+    </p>
+  </footer>
+  <div class="more-tools-section">
+  <div class="tools-card">
+    <div class="tools-header">
+      <i class="fas fa-tools"></i>
+      <span>More Tools to Help You Study 🚀</span>
+    </div>
+    <div class="tools-grid">
+      <!-- Link to your Grade Calculator -->
+      <a href="https://e3dadia-calculator.netlify.app" class="tool-link" target="_blank">
+        <i class="fas fa-calculator"></i>
+        <div>
+          <strong>Prep School Grade Calculator</strong>
+          <small>Calculate the score you need in final exams</small>
+        </div>
+      </a>
+
+
+        </div>
+
+    </div>
+  </div>
+</div>
+  <!-- WhatsApp Share Button -->
+  <div class="share-section">
+    <div class="share-box">
+      <i class="fab fa-whatsapp"></i>
+      <span>شارك الأداة مع زملائك!</span>
+      <button class="btn-share" onclick="shareOnWhatsApp()">
+      <i class="fas fa-paper-plane"></i> شارك على واتساب
+      </button>
+    </div>
+  </div>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast-notification">
+  <i class="fas fa-check-circle"></i>
+  <span id="toast-message">تم النسخ!</span>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
